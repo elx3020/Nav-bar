@@ -1,3 +1,8 @@
+:root{
+    --transition: all 0.3s ease-in-out;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -37,20 +42,24 @@ body{
     background: transparent;
     border: none;
     font-size: 1.6rem;
+    padding: 0 0.3rem 0 0.3rem;
+    transition: var(--transition);
 
 }
 
 .toggler{
-    color: white;
+    color: gray;
     list-style: none;
 }
 
 .toggler li{
-    margin-left: 3rem;
-    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+    margin-bottom: 0.1rem;
+    margin-right: 2rem;
 }
 
 .toggler ul{
+    width: 100%;
     padding-top: 1rem;
     list-style: none;
     font-size: 1.1rem;
@@ -59,15 +68,39 @@ body{
 .links {    
     height:0;
     overflow: hidden;
+    transition: var(--transition);
     
 }
 
+.links a {
+    text-decoration: none;
+    color: gray;
+    display: block;
+    transition: var(--transition);
+    padding: 0.4rem;
+}
+
+
+.links a:hover{
+    color: white;
+    background: rgb(238, 29, 63);
+    padding-left: 1.2rem;
+}
+
 .nav-links{
-    background:blue;
-    height: 12rem;
+    border: 1px solid lightgray;
+    height: 15rem;
 }
 
 
 
 
+
+/* animations */
+
+
+.btn:hover{
+    background: rgba(190, 25, 53, 0.342);
+    rotate: 90deg;
+}
 
